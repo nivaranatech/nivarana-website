@@ -12,5 +12,3 @@
 - Data analytics
 
 ---
-
-Changes
