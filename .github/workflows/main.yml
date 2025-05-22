@@ -1,0 +1,24 @@
+name: Prefix PR Number
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  prefix-pr-number:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Generate Prefixed PR Number
+        id: pr
+        run: |
+          PR_NUMBER=${{ github.event.pull_request.number }}
+          PREFIXED_PR="PR-${PR_NUMBER}"
+          echo "Prefixed PR Number: $PREFIXED_PR"
+          echo "pr_number=$PREFIXED_PR" >> $GITHUB_OUTPUT
+
+      - name: Use Prefixed PR Number
+        run: |
+          echo "The prefixed PR number is: ${{ steps.pr.outputs.pr_number }}"
