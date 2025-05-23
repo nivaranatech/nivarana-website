@@ -5,11 +5,11 @@ import {
   createRoutesFromElements,
 } from 'react-router-dom'
 import './App.css'
-import Layout from './Pages/Layout'
-import Home from './Pages/Home'
-import Feedback from './Pages/Feedback'
-import RequestService from './Pages/RequestService'
-import Contacts from './Pages/Contact'
+import Layout from './pages/Layout'
+import Home from './pages/Home'
+import Feedback from './pages/Feedback'
+import RequestService from './pages/RequestService'
+import Contacts from './pages/Contact'
 
 function App() {
 
