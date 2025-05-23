@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImage from '../assets/tech.png'; // adjust path as needed
+import logoImage from '../assets/tech.svg'; // adjust path as needed
 
 const Navbar = () => (
   <nav className="navbar">

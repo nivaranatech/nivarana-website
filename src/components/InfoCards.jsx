@@ -1,13 +1,13 @@
 import React from 'react';
-import { Route, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const InfoCards = () => {
   const navigate = useNavigate();
 
   const cards = [
     { title: 'Request for Services', icon: '🏢', route: '/request-service' },
-    { title: 'For your Contacts', icon: '📞' ,route: '/media-contacts'},
-    { title: 'Website feedback', icon: '📑' ,route: '/feedback-container'},
+    { title: 'For your Contacts', icon: '📞' ,route: '/contacts'},
+    { title: 'Website feedback', icon: '📑' ,route: '/feedback'},
   ];
 
   return (
