@@ -1,8 +1,9 @@
-import React from 'react';
-import { FaFacebookF, FaYoutube, FaXTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa6';
-import logo from '../assets/tech.svg';
 
-export const Footer = () => {
+import { FaFacebookF,FaYoutube,FaXTwitter,FaInstagram,FaLinkedinIn,} from 'react-icons/fa6';
+
+import logo from '../assets/nivaranatech-logo.jpg';
+
+const Footer = () => {
   const links = [
     'Privacy Notice',
     'Cookie Policy',
@@ -17,12 +18,12 @@ export const Footer = () => {
     <footer className="footer">
       <div className="footer-left-column">
         <div className="footer-top-row">
-          <img src={logo} alt="TCS Logo" className="logo" />
-          <p className="footer-copy">©2025 NivaranaTech Services</p>
+          <img src={logo} alt="Nivarana Tech Logo" className="footer-logo" />
+          <p className="footer-copy">©2025 NivaranaTech</p>
         </div>
         <div className="footer-links">
-          {links.map((link, i) => (
-            <a key={i} href="#">{link}</a>
+          {links.map((link, index) => (
+            <a key={index} href="#">{link}</a>
           ))}
         </div>
       </div>
