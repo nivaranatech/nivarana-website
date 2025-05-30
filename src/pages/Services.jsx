@@ -39,12 +39,30 @@ export default function Services() {
   }, []);
 
   const services = [
-    { title: 'Web Development', desc: 'Responsive websites with modern tech stack.' },
-    { title: 'Mobile App Development', desc: 'Cross-platform apps for Android & iOS.' },
-    { title: 'UI/UX Design', desc: 'Designs that engage and convert users.' },
-    { title: 'Consulting', desc: 'Strategy, architecture, and tech decisions.' },
-    { title: 'SEO & Analytics', desc: 'Improve visibility and track performance.' },
-    { title: 'Cloud Deployment', desc: 'Scalable, secure cloud infrastructure.' },
+    {
+      title: 'Web Development',
+      desc: 'We build fast, secure, and visually stunning websites that help your business attract more customers and grow online.'
+    },
+    {
+      title: 'Mobile App Development',
+      desc: 'We create user-friendly apps for Android and iOS that keep your audience engaged and boost your brand’s presence on mobile devices.'
+    },
+    {
+      title: 'UI/UX Design',
+      desc: 'We design intuitive and attractive interfaces that make your website or app easy to use, helping visitors enjoy the experience and take action.'
+    },
+    {
+      title: 'Logo Design',
+      desc: 'We craft unique and memorable logos that reflect your brand’s personality and make a strong impression on your customers.'
+    },
+    {
+      title: 'Video Editing',
+      desc: 'We turn your raw video footage into professional-quality videos that captivate your audience and deliver your message effectively.'
+    },
+    {
+      title: 'Photo Editing',
+      desc: 'We enhance and retouch your photos to make them look polished and professional, perfect for social media, websites, and print.'
+    },
   ];
 
   return (
@@ -66,7 +84,6 @@ export default function Services() {
           <div className="service-card" key={index}>
             <h3>{service.title}</h3>
             <p>{service.desc}</p>
-            <a href="#">Learn More →</a>
           </div>
         ))}
       </div>
