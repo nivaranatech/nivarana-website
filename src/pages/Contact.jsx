@@ -25,7 +25,7 @@ export default function ContactUs() {
             <div key={index}>
               <p>{email.value}</p>
               <a href={`mailto:${email.value}`} className="cta-link">
-                Click to Email
+                Click to Email Us
               </a>
             </div>
           ))}
@@ -37,7 +37,7 @@ export default function ContactUs() {
             <div key={index}>
               <p>{phone.value} <FaWhatsapp/></p>
               <a href={`tel:${phone.value.replace(/\s+/g, '')}`} className="cta-link">
-                Click to Call
+                Click to Call Us
               </a>
             </div>
           ))}
