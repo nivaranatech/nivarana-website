@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import project_img from '../assets/test-project.png';
+import ev_img from '../assets/ev_project_img.jpg';
 
 export default function Portfolio() {
   const scrollRef = useRef(null);
@@ -41,9 +42,9 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: 'Project A',
-      desc: 'A modern eCommerce website built with React and Stripe.',
-      image: project_img,
+      title: 'EV charging station finder - Android App',
+      desc: 'It is an android application which shows EV charging stations on a map.Using this app user can book charging slots in advance. User can pay slot booking fees via wallet.',
+      image: ev_img,
       link: '#',
     },
     {
@@ -84,7 +85,7 @@ export default function Portfolio() {
               <img src={project.image} alt={project.title} />
               <h3>{project.title}</h3>
               <p>{project.desc}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">Show Project →</a>
+              {/* <a href={project.link} target="_blank" >Show Project →</a> */}
             </div>
           ))}
         </div>

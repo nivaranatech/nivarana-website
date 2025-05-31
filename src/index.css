@@ -121,6 +121,9 @@ section {
   font-weight: bold;
   color: var(--dark);
   margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
 .hero p {
@@ -128,6 +131,9 @@ section {
   font-weight: 700;
   color: var(--text);
   margin-bottom: 2rem;
+  opacity: 0;
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 0.5s;
 }
 
 .cta-button {
@@ -140,6 +146,9 @@ section {
   font-size: 1rem;
   transition: 0.3s ease;
   cursor: pointer;
+  opacity: 0;
+  animation: fadeSlideIn 1s ease-out forwards;
+  animation-delay: 0.8s;
 }
 
 .cta-button:hover {
@@ -147,6 +156,17 @@ section {
   color: var(--text);
 }
 
+/*Animation on home section*/
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 /* Services Section */
@@ -201,7 +221,6 @@ section {
   border-radius: 12px;
   min-width: 250px;
   max-width: 280px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
   text-align: left;
   transition: transform 0.3s ease;
 }
@@ -270,14 +289,12 @@ section {
 }
 
 .portfolio-card {
-  background: linear-gradient(to right, var(--primary), var(--accent));
-  color: white;
-  min-width: 280px;
-  max-width: 320px;
+  background: linear-gradient(135deg, var(--accent), var(--primary));
+  min-width: 330px;
+  max-width: 380px;
   border-radius: 12px;
-  padding: 1rem;
+  padding: 1.2rem;
   flex-shrink: 0;
-  box-shadow: 0 0 10px rgba(255, 71, 225, 0.3);
   text-align: left;
   transition: transform 0.3s ease;
 }
@@ -288,33 +305,22 @@ section {
 
 .portfolio-card img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .portfolio-card h3 {
-  color: var(--text);
+  color: var(--dark);
   margin-top: 0.5rem;
   font-size: 1.3rem;
 }
 
 .portfolio-card p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   margin: 0.5rem 0;
-  color: var(--dark);
-  font-weight: 500;
-}
-
-.portfolio-card a {
-  color: var(--pink);
-  font-weight: bold;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.portfolio-card a:hover {
-  color: var(--blue);
+  color: var(--text);
+  font-weight: 700;
 }
 
 
@@ -378,7 +384,6 @@ section {
   border-radius: 12px;
   min-width: 250px;
   max-width: 320px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -476,7 +481,6 @@ section {
   border-radius: 12px;
   min-width: 250px;
   max-width: 280px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
   text-align: center;
 }
@@ -670,13 +674,21 @@ section {
   }
 
   .portfolio-card {
-    min-width: 85%;
-    max-width: 90%;
+    min-width: 95%;  
+    max-width: 95%;
     margin: 0 auto;
   }
 
   .portfolio-card img {
-    height: 160px;
+    height: 200px;
+  }
+
+  .portfolio-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .portfolio-card p {
+    font-size: 0.95rem;
   }
 
   /* Hide scroll arrows on mobile, users can swipe */
