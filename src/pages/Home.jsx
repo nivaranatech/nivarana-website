@@ -1,11 +1,13 @@
 
 export default function Home() {
   return (
-    <section className="hero" id="home">
+    <section className="hero">
       <div className="hero-content">
-        <h2>Empowering Ideas, Elevating Futures</h2>
-        <p>Your vision, our code.</p>
-        <button className="cta-button">Start Your Project</button>
+        <h2>Welcome To NivaranaTech</h2>
+        <p>"Where Vision, Meets Execution"</p>
+        <a href="#contact">
+          <button className="cta-button">Start Your Journey</button>
+        </a>
       </div>
     </section>
   );

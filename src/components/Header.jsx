@@ -1,7 +1,13 @@
-
+import { useState } from 'react';
 import logoImage from '../assets/nivaranatech-logo.jpg';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -11,7 +17,14 @@ const Navbar = () => {
           <div className="brand-bottom">Tech</div>
         </div>
       </div>
-      <ul className="navbar-links">
+
+      {/* Hamburger button */}
+      <button className="hamburger" onClick={toggleNavbar}>
+        ☰
+      </button>
+
+      {/* Navbar links */}
+      <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
