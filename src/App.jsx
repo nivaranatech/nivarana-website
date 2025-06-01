@@ -9,11 +9,12 @@ import Contact from './pages/Contact'
 import './index.css'
 
 function App() {
+  const portfolioCount = 5;
   return (
     <>
       <Header />
       <main>
-        <section id="home"><Home /></section>
+        <section id="home"><Home portfolioCount={portfolioCount}/></section>
         <section id="services"><Services /></section>
         <section id="portfolio"><Portfolio /></section>
         <section id="contact"><Contact /></section>
