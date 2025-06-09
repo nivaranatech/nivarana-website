@@ -111,30 +111,6 @@ section {
   text-align: center;
   padding: 2rem;
 }
-/* Changes For Animation Delay*/
-@keyframes fadeSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.count-animation {
-  opacity: 0;
-  animation: fadeSlideIn 1s ease forwards;
-  animation-delay: 1.2s;
-}
-
-.count-label-animation {
-  opacity: 0;
-  animation: fadeSlideIn 1s ease forwards;
-  animation-delay: 1.5s;
-}
-/* End Changes For Animation Delay*/
 
 .hero-content {
   max-width: 800px;
@@ -178,6 +154,24 @@ section {
 .cta-button:hover {
   background-color: var(--blue);
   color: var(--text);
+}
+
+.counter {
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0;
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.count-label {
+  color: var(--dark);
+  font-size: 1.3rem;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 1.5s;
 }
 
 /*Animation on home section*/
@@ -329,7 +323,7 @@ section {
 
 .portfolio-card img {
   width: 100%;
-  height: 220px;
+  height: 260px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -406,8 +400,8 @@ section {
   background: linear-gradient(135deg, var(--accent), var(--primary));
   padding: 2rem;
   border-radius: 12px;
-  min-width: 250px;
-  max-width: 320px;
+  min-width: 320px;
+  max-width: 340px;
   text-align: center;
   transition: transform 0.3s ease;
 }
@@ -704,7 +698,7 @@ section {
   }
 
   .portfolio-card img {
-    height: 200px;
+    height: 230px;
   }
 
   .portfolio-card h3 {
@@ -736,8 +730,8 @@ section {
   }
 
   .contact-card {
-    min-width: 80%;
-    max-width: 90%;
+    min-width: 90%;
+    max-width: 95%;
   }
 
   /* About Section for mobile */

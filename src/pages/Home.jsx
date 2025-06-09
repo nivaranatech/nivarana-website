@@ -1,5 +1,8 @@
 import CountUp from 'react-countup';
-export default function Home({portfolioCount}) {
+export default function Home() {
+
+  const portfolioCount = 6;
+
   return (
     <section className="hero">
       <div className="hero-content">
@@ -11,16 +14,12 @@ export default function Home({portfolioCount}) {
          {portfolioCount > 0 && (
           <div style={{ marginTop: '2rem', textAlign: 'center' }}>
             <div
-              className="count-animation"
-              style={{ fontSize: '3rem', fontWeight: 'bold', color: 'white' }}
-            >
+              className="counter">
               <CountUp end={portfolioCount} duration={3} separator="," delay={2}/>
             </div>
             <div
-              className="count-label-animation"
-              style={{ fontSize: '1.2rem', fontWeight: 'bold', color: 'black' }}
-            >
-              Completed Projects
+              className="count-label">
+              Projects Completed
             </div>
           </div>
         )}
