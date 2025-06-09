@@ -1,9 +1,10 @@
 import { useRef, useState, useEffect } from 'react';
 import ev_img from '../assets/ev_app_img.jpg';
 import blog_img from '../assets/blog_app_img.jpg';
-import health_img from '../assets/health_app_img.jpg';
+import healthy_mind_img from '../assets/healthy_mind_app_img.jpg';
 import finance_img from '../assets/expense_website_img.jpg';
 import whisper_img from '../assets/whisper_app_img.jpg';
+import whowear_img from '../assets/whowear_website_img.jpg';
 
 export default function Portfolio() {
   const scrollRef = useRef(null);
@@ -45,27 +46,33 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: 'Personal finance tracker - Website',
+      title: 'Personal Finance Tracker - Website',
       desc: 'The platform allows users to register and log in securely, track their income and expenses, set monthly budgets, monitor transaction history, export financial reports as Excel or PDF, and gain visual insights via charts.',
       image: finance_img,
       link: '#',
     },
     {
-      title: 'EV charging station finder - Android App',
-      desc: 'It is an android application which shows EV charging stations on a map.Using this app user can book charging slots in advance. User can pay slot booking fees via wallet.',
+      title: 'Plug&Charge Zone - Android App',
+      desc: 'Plug&Charge Zone is an android application which shows EV charging stations on a map.Using this app user can book charging slots in advance. User can pay slot booking fees via wallet.',
       image: ev_img,
       link: '#',
     },
     {
-      title: 'Social media app',
-      desc: 'It is a social media application with video call, voice call and Reat time chat functionality. Other than that it also include functionalities like Follow, Unfollow, Post, Upvote, Downvote, Dynamic app theme, Location sharing, Contact Sharing, Gemini AI.',
+      title: 'Whisper - Android App',
+      desc: 'Whisper is a social media android application with video call, voice call and Real time chat functionality. Other than that it also include functionalities like Follow, Unfollow, Post, Upvote, Downvote, Dynamic app theme, Location sharing, Contact Sharing, Gemini AI.',
       image: whisper_img,
       link: '#',
     },
     {
-      title: 'Mental health monitoring - Android App',
-      desc: 'It is an intuitive, psychiatrist-guided Android application designed to help users track, assess, and improve their mental health, while offering a seamless platform to book appointments with certified mental health professionals.',
-      image: health_img,
+      title: 'WhoWear - Website',
+      desc: 'WhoWear is a modern, user-friendly online clothing website. It enables customers to explore stylish clothing, add items to cart, and purchase them seamlessly via a secure checkout process.',
+      image: whowear_img,
+      link: '#',
+    },
+    {
+      title: 'Healthy Mind - Android App',
+      desc: 'It is an intuitive, psychiatrist-guided android application designed to help users track, assess, and improve their mental health, while offering a seamless platform to book appointments with certified mental health professionals.',
+      image: healthy_mind_img,
       link: '#',
     },
     {
