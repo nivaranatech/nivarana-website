@@ -56,13 +56,9 @@ export default function Services() {
       desc: 'We craft unique and memorable logos that reflect your brand’s personality and make a strong impression on your customers.'
     },
     {
-      title: 'Video Editing',
-      desc: 'We turn your raw video footage into professional-quality videos that captivate your audience and deliver your message effectively.'
-    },
-    {
-      title: 'Photo Editing',
-      desc: 'We enhance and retouch your photos to make them look polished and professional, perfect for social media, websites, and print.'
-    },
+      title: 'Photo & Video Editing',
+      desc: 'We expertly edit your photos and videos to create stunning, high-quality content that grabs attention and communicates your message clearly across digital platforms.'
+    }
   ];
 
   return (

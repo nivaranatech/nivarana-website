@@ -6,6 +6,7 @@ export default function About(){
     { name: 'Pratik Bhavsar', link: 'https://www.linkedin.com/in/pratik-bhavsar-b67522272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
     { name: 'Dev Suthar', link: 'https://www.linkedin.com/in/dev-suthar-9107b0245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
     { name: 'Akshay Sarkale', link: 'https://www.linkedin.com/in/akshaysarkale?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+    { name: 'Ayush Bhavsar', link: 'https://www.linkedin.com/in/ayushbhavsar5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
     { name: 'Dhairya Bhoya', link: 'https://www.linkedin.com/in/dhairya-bhoya-232623241?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
   ];
 

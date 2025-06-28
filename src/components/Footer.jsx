@@ -1,7 +1,7 @@
 
 import { FaFacebookF,FaYoutube,FaXTwitter,FaInstagram,FaLinkedinIn, FaWhatsapp,} from 'react-icons/fa6';
 
-import logo from '../assets/nivaranatech-logo.jpg';
+import logo from '../assets/nivaranatech-logo-transparent.png';
 
 const Footer = () => {
   // const links = [
