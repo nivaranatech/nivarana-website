@@ -1,11 +1,15 @@
 import { useState } from 'react';
-import logoImage from '../assets/nivaranatech-logo.jpg';
+import logoImage from '../assets/nivaranatech-logo-transparent.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleNavbar = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+        setIsMenuOpen(false);
   };
 
   return (
@@ -25,11 +29,11 @@ const Navbar = () => {
 
       {/* Navbar links */}
       <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-        <li><a href="#about">About Us</a></li>
+        <li><a href="#home" onClick={closeMenu} >Home</a></li>
+        <li><a href="#services" onClick={closeMenu} >Services</a></li>
+        <li><a href="#portfolio" onClick={closeMenu} >Portfolio</a></li>
+        <li><a href="#contact" onClick={closeMenu} >Contact Us</a></li>
+        <li><a href="#about" onClick={closeMenu} >About Us</a></li>
       </ul>
     </nav>
   );
