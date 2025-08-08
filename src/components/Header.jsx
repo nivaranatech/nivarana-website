@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logoImage from '../assets/nivaranatech-logo-transparent.png';
+import logoImage from '/nivaranatech-logo-transparent.png';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
