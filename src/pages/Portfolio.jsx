@@ -75,12 +75,12 @@ export default function Portfolio() {
       image: healthy_mind_img,
       link: '#',
     },
-    {
+    /*{
       title: 'Blog Application',
       desc: 'It is an easy-to-use platform where you can write, edit, and share your blog posts. You can sign up, log in, and start creating content.',
       image: blog_img,
       link: '#',
-    },
+    },*/
   ];
 
   return (

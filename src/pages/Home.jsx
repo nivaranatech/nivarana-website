@@ -1,7 +1,7 @@
 import CountUp from 'react-countup';
 export default function Home() {
 
-  const portfolioCount = 6;
+  const portfolioCount = 5;
 
   return (
     <section className="hero">
